@@ -1,6 +1,13 @@
 root: true
-extends: eslint:recommended
+plugins:
+  - react
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
 parser: babel-eslint
+parserOptions:
+  ecmaFeatures:
+    jsx: true
 env:
   browser: true
   es6: true
