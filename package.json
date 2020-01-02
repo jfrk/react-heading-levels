@@ -1,6 +1,15 @@
 {
-  "name": "react-id",
+  "name": "@jfrk/react-heading-levels",
   "version": "1.0.0",
+  "description": "Provides components that calculate the correct HTML heading levels for you",
+  "keywords": [
+    "react",
+    "headings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfrk/react-heading-levels.git"
+  },
   "main": "lib/index.js",
   "author": "Fredrik Johansson <jeanfredrik@gmail.com>",
   "license": "MIT",
