@@ -29,5 +29,8 @@
     "clean": "rm -rf ./lib",
     "prepare": "yarn build",
     "prettier": "prettier --write '**/*.{js,json,md,yml}'"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
