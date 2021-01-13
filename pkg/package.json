@@ -1,0 +1,37 @@
+{
+  "name": "@jfrk/react-heading-levels",
+  "version": "1.0.0",
+  "description": "Provides components that calculate the correct HTML heading levels for you",
+  "keywords": [
+    "react",
+    "headings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfrk/react-heading-levels.git"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*",
+    "README.md",
+    "*.js"
+  ],
+  "author": "Fredrik Johansson <jeanfredrik@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10"
+  },
+  "scripts": {
+    "build": "yarn clean && babel -d ./lib ./src",
+    "build:watch": "babel --watch -d ./lib ./src",
+    "clean": "rm -rf ./lib",
+    "prepare": "yarn build",
+    "prepublishOnly": "cp ../README.md ."
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

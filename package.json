@@ -1,36 +1,18 @@
 {
-  "name": "@jfrk/react-heading-levels",
-  "version": "1.0.0",
-  "description": "Provides components that calculate the correct HTML heading levels for you",
-  "keywords": [
-    "react",
-    "headings"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jfrk/react-heading-levels.git"
-  },
-  "main": "lib/index.js",
-  "author": "Fredrik Johansson <jeanfredrik@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.17.0",
-    "prettier": "^1.19.1"
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "pkg",
+      "example"
+    ]
   },
   "scripts": {
-    "build": "yarn clean & babel -d ./lib ./src",
-    "build:watch": "babel --watch -d ./lib ./src",
-    "clean": "rm -rf ./lib",
-    "prepare": "yarn build",
-    "prettier": "prettier --write '**/*.{js,json,md,yml}'"
+    "format": "prettier --write '**/*.{js,json,md,css,yml}'"
   },
-  "publishConfig": {
-    "access": "public"
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1"
   }
 }
